@@ -794,6 +794,8 @@ width: 40%;
     }
 
     .about__img{
+        height: 100%;
+    
         margin: 0;
     }
 
