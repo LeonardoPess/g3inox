@@ -941,6 +941,10 @@ width: 40%;
 }
 
 @media screen and (max-width: 500px){
+    .header__contato p{
+        line-height: 10px;
+    }
+
     .home__title{
         font-size: 30px;
         color: white;
