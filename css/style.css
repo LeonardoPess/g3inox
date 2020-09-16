@@ -253,7 +253,7 @@ section.home{
 }
 
 .home__button{
-    padding: 30px 2%;
+    padding: 30px 0;
 }
 
 .button{
@@ -956,6 +956,15 @@ width: 40%;
 
     .header__contato{
         display: block;
+    }
+
+    .button{
+        width: 310px;
+        height: 50px;
+    }
+
+    .button svg{
+        margin-right: 0;
     }
 
     .w50{
