@@ -323,7 +323,7 @@ section.about{
 .about__text{
     width: 60%;
 
-    padding: 20px 0;
+    padding-top: 20px;
 }
 
 .animated__border{
