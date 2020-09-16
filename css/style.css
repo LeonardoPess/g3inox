@@ -1,0 +1,973 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+html,body{
+    height: 100%;
+}
+
+/******* Pattern *******/
+.clear{
+    clear: both;
+}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+/*************************/
+
+/******* Header *******/
+
+header{
+    background-color: white;
+    width: 100%;
+}
+
+/******* Header Contact *******/
+
+.container__header__contato{
+    width: 100%;
+    max-width: 100%;
+
+    background-color: black;
+}
+
+.header__contato{
+    max-width: 1180px;
+
+    margin: 0 auto;
+    padding: 10px 2%;
+    display: flex;
+}
+
+.w50{
+    width: 50%;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.header__contato svg{
+    margin-right: 5px;
+
+    color: white;
+}
+
+.header__contato svg.whats{
+    margin: 0 8px;
+
+    color: green;
+    font-size: 23px;
+}
+
+.header__contato svg.tel{
+    margin: 0 8px;
+
+    color: white;
+    font-size: 20px;
+}
+
+.header__contato p{
+    display: inline-block;
+
+    line-height: 49px;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.header__contato a{
+    display: inline-block;
+    margin-right: 9px;
+
+    color: green;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header__contato a:hover{
+    color:rgb(0,100,0);
+}
+
+.header__contato a:hover svg{
+    color:rgb(0,100,0);
+}
+
+.header__contato h2{
+    display: inline-block;
+
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+/******* Header Menu Desktop *******/
+
+.header__container{
+    padding: 23px 2%;
+}
+
+.header__logo{
+    width: 50px;
+    height: 50px;
+
+    float: left;
+    position: relative;
+    top: -12px;
+
+    background-image: url(../images/logog3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header__container span a{
+    margin-left: 13px;
+
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header__nav{
+    float: right;
+}
+
+.header__ul{
+    list-style-type: none;
+}
+
+.header__ul li{
+    display: inline-block;
+}
+
+.header__ul li a{
+    margin-left: 55px;
+
+    color: black;
+    justify-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.header__ul li a:hover{
+    text-decoration: underline;
+    color: rgb(100,100,100);
+}
+
+/******* Header Menu Mobile *******/
+
+.header__nav__mobile{
+    background-color: white;
+}
+
+.header__icon__menu{
+    display: none;
+
+    float: right;
+    position: relative;
+    top: -13px;
+
+    cursor: pointer;
+    text-align: right;
+    font-size: 35px;
+    color: black;
+}
+
+.header__ul__mobile{
+    width: 100%;
+    display: none;
+    list-style-type: none;
+}
+
+.header__ul__mobile li{
+    padding: 10px;
+
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.header__ul__mobile li a{
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.header__ul__mobile li a:hover{
+    text-decoration: underline;
+    color: rgb(100,100,100);
+}
+
+/*************************/
+
+/******* Home *******/
+
+section.home{
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+
+    background-image: url(../images/predios.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home__overlay{
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(20,20,20,0.9);
+}
+
+.container__home{
+    padding: 80px 2%;
+}
+
+.home__title{
+    font-size: 40px;
+    color: white;
+}
+
+.home__paragraph{
+    max-width: 500px;
+
+    margin-top: 15px;
+
+    line-height: 30px;
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+}
+
+.home__button{
+    padding: 30px 0;
+}
+
+.button{
+    width: 315px;
+    height: 50px;
+
+    transition: 1s;
+
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border-bottom: 1px solid black;
+    border-left: 2px solid black;
+}
+
+.button:hover{
+    color: white;
+    background-color: black;
+    border-bottom: 1px solid white;
+    border-left: 2px solid white;
+}
+
+.button:hover > a{
+    color: white;
+}
+
+.button svg{
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+    font-size: 27px;
+}
+
+.button a{
+    width: 315px;
+    height: 50px;
+
+    transition: 1s;
+
+    position: absolute;
+
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/*************************/
+
+/******* About *******/
+
+section.about{
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+}
+
+.about__container{
+    padding: 80px 2%;
+}
+
+.about__wraper{
+    display: flex;
+}
+
+.about__text{
+    width: 60%;
+
+    padding: 20px 0;
+}
+
+.animated__border{
+    width: 80px;
+    height: 4px;
+    
+    transition: 1s;
+
+    border-radius: 8px;
+    background-color: black;
+}
+
+section.about:hover .animated__border{
+    width: 145px;
+}
+
+.about__text h2{
+    color: black;
+    font-size: 30px;
+}
+
+.about__text p{
+    max-width: 600px;
+
+    margin-top: 15px;
+
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: lighter;
+}
+
+.about__img-wraper{
+    width: 50%;
+
+    margin: 40px 0 10px 0;
+}
+
+.about__img{
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../images/corrimao.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*************************/
+
+/******* Services *******/
+
+section.services{
+    width: 100%;
+
+    background-image: url(../images/equipamento.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.services__overlay{
+    width: 100%;
+
+    background-color: rgba(10,10,10,0.7);
+}
+
+.services__container{
+    padding: 40px 2%;
+}
+
+section.services .animated__border{
+    background-color: white;
+}
+
+section.services:hover .animated__border{
+    width: 125px;
+}
+
+.services__container h2{
+    color: white;
+    font-size: 30px;
+}
+
+.services__wraper{
+    margin-top: 25px;
+    display: flex;
+}
+
+.w33{
+    width: 33.3%;
+}
+
+.services__single{
+    margin: 10px 30px 10px 0;
+
+    transition: 0.5s;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+.services__single:hover{
+    width: 40%;
+}
+
+.services__single:hover .services__img__wraper{
+    height: 300px;
+}
+
+.services__img__wraper{
+    width: 100%;
+    height: 200px;
+
+    transition: 0.5s;
+
+    overflow: hidden;
+}
+
+.services__img{
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.services__text{
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.services__text h2{
+    padding: 20px;
+
+    color: black;
+}
+
+.services__text p{
+    padding: 0 20px 30px 20px;
+
+    font-weight: lighter;
+}
+
+/*************************/
+
+/******* Portfolio *******/
+
+section.portfolio{
+    width: 100%;
+    background-color: white;
+}
+
+.portfolio__container{
+    padding: 40px 2% 60px 2%;
+}
+
+section.portfolio:hover .animated__border{
+    width: 133px;
+}
+
+section.portfolio h2{
+    font-size: 30px;
+}
+
+.portfolio__img__wraper{
+    margin-top: 25px;
+}
+
+.portfolio__img__destaque{
+    width: 100%;
+    height: 360px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.portfolio__nav__galeria__parent{
+    width: 100%;
+    padding: 36px;
+
+    position: relative;
+
+    overflow: hidden
+}
+
+.arrow__left{
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    -ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+    text-align: left;
+    cursor: pointer;
+    font-size:  25px;
+}
+
+.arrow__right{
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    -ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+    text-align: right;
+    cursor: pointer;
+    font-size:  25px;
+}
+
+.nav__galeria{
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.portfolio__nav__galeria__wraper{
+    /*Via js*/
+    display: flex;
+}
+
+.portfolio__mini__img__wraper{
+    padding: 9px;
+    /*Via js*/
+}
+
+.mini-img{
+    width: 100%;
+	padding-top: 70%;
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+}
+
+/*************************/
+
+/******* Contact *******/
+
+section.contato{
+    width: 100%;
+
+    background-image: url(../images/predios.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contato__overlay{
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(20,20,20,0.7);
+}
+
+
+.contato__container{
+    padding: 40px 2%;
+}
+
+section.contato .animated__border{
+    background-color: white;
+}
+
+section.contato:hover .animated__border{
+    width: 120px;
+}
+
+.contato__wraper{
+    display: flex;
+}
+
+section.contato h2{
+    color: white;
+    font-size: 30px;
+}
+
+.contato__text{
+    color: rgb(220,220,220);
+    width: 40%;
+}
+
+.contato__text a{
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+section.contato svg.contato__whats{
+    margin-top: -5px;
+    margin-right: 5px;
+    position: relative;
+    top: 8px;
+
+    font-size: 28px;
+    color: rgb(220,220,220);
+}
+
+section.contato svg{
+    margin: 50px 0 5px 0;
+
+    font-size: 45px;
+    color: rgb(220,220,220);
+}
+
+.contato__text h2{
+    font-size: 15px;
+}
+
+.contato__text p{
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.contato__map__wraper{
+    width: 60%;
+
+    position: relative;
+    top: -38px;
+}
+
+.contato__map__wraper h2{
+    font-size: 15px;
+    color: rgb(220,220,220);
+}
+
+.contato__map{
+    width: 100%;
+
+    margin-top: 20px;
+}
+
+.contato__map iframe{
+    width: 100%;
+    height: 500px;
+
+    border: 2px solid black;
+}
+
+/*************************/
+
+/******* Footer *******/
+
+footer{
+    background-color: rgb(8,8,8);
+    color: white;
+}
+
+.footer__row{
+    width: 100%;
+
+    padding: 10px 2%;
+    display: flex;
+
+    text-align: center;
+}
+
+.footer__col{
+    width: 30%;
+}
+
+.footer__col__30{
+    width: 30%;
+}
+
+.footer__col__40{
+width: 40%;
+}
+
+.footer__col h2{
+    font-size: 30px;
+}
+
+.footer__col p{
+    padding: 5px;
+
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.footer__col a{
+    color: white;
+}
+
+.footer__col__links a{
+    padding: 5px;
+    display: block;
+
+    text-decoration: none;
+}
+
+.footer__col svg{
+    margin: 5px;
+
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.footer__col a:hover{
+    color: rgb(150,150,150);
+    text-decoration: underline;
+}
+
+.footer__col svg:hover{
+    color: rgb(150,150,150);
+}
+
+.footer__sub{
+    background-color: black;
+    text-align: center;
+}
+
+.dev{
+    margin: 0 3px;
+}
+
+.dev__whats{
+    color: white;
+}
+
+
+
+
+
+
+/*************************/
+
+/******* Responsive *******/
+
+@media screen and (max-width: 1100px){
+    section.about{
+        width: 100%;
+        height: auto;
+    }
+
+    .about__container{
+        padding: 30px 2%;
+    }
+
+    .about__wraper{
+        display: block;
+    }
+    
+    .about__text{
+        width: 100%;
+    
+        padding: 20px;
+    }
+
+    .about__text p{
+        max-width: 1200px;
+    
+        margin-top: 15px;
+    
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: lighter;
+    }
+
+    .about__img-wraper{
+        width: 100%;
+    
+        padding: 20px;
+    }
+
+    .about__img{
+        height: 500px;
+    
+        margin: 20px 0 10px 0;
+    }
+
+    .services__container{
+        padding: 60px 40px;
+    }
+
+    .footer__col__30{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .header__icon__menu{
+        display: block;
+    }
+
+    .header__container{
+        padding: 0;
+    }
+
+    .header__nav__mobile{
+        display: block;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    .header__logo__wraper{
+        padding: 23px 2%;
+    }
+
+    .portfolio__img__destaque{
+        height: 400px;
+    }
+
+    .contato__wraper{
+        display: block;
+    }
+
+    .contato__text{
+        width: 100%;
+        display: flex;
+    }
+
+    .contato__map__wraper{
+        width: 100%;
+    }
+
+    .contato__text__single{
+        text-align: center;
+        width: 33.3%;
+    } 
+
+    .contato__map__wraper h2{
+        text-align: center;
+    }
+
+    .contato__map__wraper{
+        padding: 60px;
+        top: 0;
+    }
+
+    .contato__map{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contato__map iframe{
+        width: 100%;
+        height: 400px;
+
+        border: 2px solid black;
+    }
+}
+
+@media screen and (max-width: 868px){
+    .w33{
+        width: 100%;
+    }
+    
+    .services__wraper{
+        padding: 30px 20%;
+        display: block;
+    }
+
+    .services__single{
+        margin: 12px auto 50px auto;
+    }
+
+    .services__single:hover{
+        width: 100%;
+    }
+
+    .portfolio__img__destaque{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .services__wraper{
+        padding: 30px 15%;
+    }
+
+    .contato__text{
+        display: block;
+    }
+
+    .contato__text__single{
+        width: 100%;
+    } 
+
+    .footer__row{
+        width: 100%;
+    
+        padding: 10px 2%;
+        display: block;
+    
+        text-align: center;
+    }
+    
+    .footer__col{
+        width: 100%;
+
+        margin-top: 15px;
+    }
+
+    .footer__col__30{
+        width: 100%;
+    }
+    
+    .footer__col__40{
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .portfolio__img__destaque{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .home__title{
+        font-size: 30px;
+        color: white;
+    }
+
+    .home__text p{
+        font-size: 14px;
+    }
+
+    .header__contato{
+        display: block;
+    }
+
+    .w50{
+        width: 100%;
+    }
+
+    .left{
+        text-align: center;
+    }
+    
+    .right{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .services__wraper{
+        padding: 30px 2%;
+    }
+}
