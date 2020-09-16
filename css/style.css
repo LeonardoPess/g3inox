@@ -963,6 +963,10 @@ width: 40%;
         height: 50px;
     }
 
+    .button a{
+        width: 310px;
+    }
+
     .button svg{
         margin-right: 0;
     }
