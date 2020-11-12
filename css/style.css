@@ -252,16 +252,14 @@ section.home{
     color: white;
 }
 
-.home__whatsapp{
-    text-decoration: none;
+.home__button{
+    padding: 30px 0;
 }
 
 .button{
     width: 315px;
     height: 50px;
 
-    display: inline-block;
-    margin-top: 60px;
     transition: 1s;
 
     cursor: pointer;
@@ -283,14 +281,19 @@ section.home{
 }
 
 .button svg{
-    margin: 0 5px 0 20px;
+    margin-right: 5px;
     position: relative;
     top: 3px;
     font-size: 27px;
 }
 
-.button span{
-    margin-right: 20px;
+.button a{
+    width: 315px;
+    height: 50px;
+
+    transition: 1s;
+
+    position: absolute;
 
     color: black;
     text-decoration: none;
@@ -298,6 +301,7 @@ section.home{
     text-align: center;
     line-height: 50px;
 }
+
 /*************************/
 
 /******* About *******/
@@ -541,8 +545,8 @@ section.portfolio h2{
 }
 
 .portfolio__nav__galeria__wraper{
-    display: flex;
     /*Via js*/
+    display: flex;
 }
 
 .portfolio__mini__img__wraper{
@@ -740,11 +744,6 @@ width: 40%;
     margin: 0 3px;
 }
 
-.email__dev{
-    text-decoration: none;
-    color: white;
-}
-
 .dev__whats{
     color: white;
 }
@@ -865,11 +864,11 @@ width: 40%;
     .contato__map{
         width: 100%;
         height: 100%;
-        text-align: center;
     }
 
     .contato__map iframe{
         width: 100%;
+        height: 400px;
 
         border: 2px solid black;
     }
@@ -899,11 +898,6 @@ width: 40%;
 }
 
 @media screen and (max-width: 768px){
-    .contato__map iframe{
-        width: 280px;
-        height: 280px;
-    }
-
     .services__wraper{
         padding: 30px 15%;
     }
@@ -948,11 +942,6 @@ width: 40%;
 }
 
 @media screen and (max-width: 500px){
-    .contato__map iframe{
-        width: 100%;
-        height: 280px;
-    }
-
     .header__contato p{
         line-height: 10px;
     }
@@ -971,18 +960,16 @@ width: 40%;
     }
 
     .button{
-        width: 90%;
-        height: auto;
+        width: 98%;
+        height: 50px;
+    }
 
-        text-align: center;
+    .button a{
+        width: 98%;
     }
 
     .button svg{
-        margin: 0 0 0 5px;
-    }
-
-    .button span{
-        font-size: 12px;
+        margin-right: 0;
     }
 
     .w50{
