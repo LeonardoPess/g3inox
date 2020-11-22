@@ -2,18 +2,27 @@ $(function(){
 
 	var maxIndex = Math.ceil($('.portfolio__mini__img__wraper').length/3) - 1;
 	var curIndex = 0;
+	var x = window.matchMedia("(max-width: 768px)");
 
-	initSlider();
+	x.addListener(initSlider) // Attach listener function on state changes
+
+	initSlider(x);
 	navegateSlider();
 	clickSlider();
 
-	function initSlider(){
-		var amt = $('.portfolio__mini__img__wraper').length * 16.6;
+	function initSlider(x){
 		var elScroll = $('.portfolio__nav__galeria__wraper');
 		var elSingle = $('.portfolio__mini__img__wraper');
 
-		elScroll.css('width',amt+'%');
-		elSingle.css('width',16.6*(100/amt)+'%');
+		if (x.matches) { // If media query matches
+			var amt = $('.portfolio__mini__img__wraper').length * 33.3;
+			elScroll.css('width',amt+'%');
+			elSingle.css('width',33.3*(100/amt)+'%');
+		  } else {
+			var amt = $('.portfolio__mini__img__wraper').length * 16.6;
+			elScroll.css('width',amt+'%');
+			elSingle.css('width',16.6*(100/amt)+'%');
+		  }
 	}
 
 	function navegateSlider(){
