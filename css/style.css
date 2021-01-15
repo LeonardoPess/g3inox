@@ -278,7 +278,7 @@ section.home{
     border-left: 2px solid white;
 }
 
-.button:hover > a{
+.button:hover > span{
     color: white;
 }
 
